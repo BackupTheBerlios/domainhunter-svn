@@ -1,0 +1,10 @@
+0.0.3 - 07/07/2007
+* Change Style
+* Use php exec function instead of php fsockopen function to whois class
+
+0.0.2 - 03/06/2007
+* Repair 1724802 bug
+* Change GUI default language
+
+0.0.1 - 09/05/2007
+* Domain hunter project first relase
