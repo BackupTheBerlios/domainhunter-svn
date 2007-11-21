@@ -1,11 +1,11 @@
 <?
 /*
  +-----------------------------------------------------------------------+
- | Domain Hunter - Domain Monitoring System                              |
- | Version 0.0.3                                                         |
+ | Domain Hunter - A Simple Domain Monitoring Application                |
+ | Version 0.1.0                                                         |
  |                                                                       |
  | Copyright (C) 2006-2007, DomainLabs.EU - Turkey                       |
- | Licensed under the GNU GPL                                            |
+ | Licensed under the GNU GPLv3                                          |
  |                                                                       |
  +-----------------------------------------------------------------------+
  | Author: Bahri Meric CANLI <bahri@bahri.info>                          |
@@ -13,21 +13,26 @@
 
 */
 
-$script_version = "0.0.3";
+$script_version = "0.1.0";
 
 $per_page_domain = 20;
 
-$hunter_email = "admin@admin.com"; // monitor admin mail address
- 
-  
-////////////////////////////////////////////////////////////////////
- 
- 
-$dbhost = "hostname"; // database hostname
-$dbuname = "database_user";  // database user name
-$dbpass = "password";  // database user password
-$dbname = "database_name";  // database name
+$hunter_email = "hostmaster@canlisoft.com";
 
+/*
+1- domainlabs.eu
+2- domaintools.com
+3- aboutuorg
+*/
+
+$detail_server = 2;
+
+////////////////////////////////////////////////////////////////////
+
+$dbhost = "localhost";
+$dbuname = "hunter_user";
+$dbpass = "fVaQWW";
+$dbname = "domain_hunter";
 
 
 //////////////////// mysql connect //////////////////////////////////

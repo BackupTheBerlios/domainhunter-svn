@@ -1,11 +1,11 @@
 <?php
 /*
  +-----------------------------------------------------------------------+
- | Domain Hunter - Domain Monitoring System                              |
- | Version 0.0.3                                                         |
+ | Domain Hunter - A Simple Domain Monitoring Application                |
+ | Version 0.1.0                                                         |
  |                                                                       |
  | Copyright (C) 2006-2007, DomainLabs.EU - Turkey                       |
- | Licensed under the GNU GPL                                            |
+ | Licensed under the GNU GPLv3                                          |
  |                                                                       |
  +-----------------------------------------------------------------------+
  | Author: Bahri Meric CANLI <bahri@bahri.info>                          |
@@ -16,7 +16,6 @@
 include ("config.inc.php");
 include ("header.inc.php");
 include ("functions.inc.php");
-include ("server_list.php");
 include ("sorgu.php");
 
 ?>
@@ -46,7 +45,7 @@ include ("sorgu.php");
 
 if ( (isset($_POST['fDomain'])) && ($_POST['fDomain'] !="") ) {
 
-$domain = $_POST['fDomain'];
+$domain = tr_strtolower($_POST['fDomain']);
 
 $domain_array = explode(".", $domain);
 

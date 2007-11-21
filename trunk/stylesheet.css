@@ -237,6 +237,11 @@ a:visited, a:active {
     text-decoration: underline;
     color: #000000;
 }
+.result {
+    color: maroon;
+    padding: 3px 3px 3px 3px;
+    text-align: center;
+}
 
 
 

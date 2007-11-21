@@ -1,3 +1,8 @@
+0.1.0 - 21/11/2007
+* fixed upper case problem add new domain
+* add delete domain function
+* add domain whois detail service
+
 0.0.3 - 07/07/2007
 * Change Style
 * Use php exec function instead of php fsockopen function to whois class

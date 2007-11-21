@@ -1,11 +1,11 @@
 <?php
 /*
  +-----------------------------------------------------------------------+
- | Domain Hunter - Domain Monitoring System                              |
- | Version 0.0.3                                                         |
+ | Domain Hunter - A Simple Domain Monitoring Application                |
+ | Version 0.1.0                                                         |
  |                                                                       |
  | Copyright (C) 2006-2007, DomainLabs.EU - Turkey                       |
- | Licensed under the GNU GPL                                            |
+ | Licensed under the GNU GPLv3                                          |
  |                                                                       |
  +-----------------------------------------------------------------------+
  | Author: Bahri Meric CANLI <bahri@bahri.info>                          |
@@ -42,10 +42,22 @@ else {
 
         }
 
-//         if ($xnsor == "xn--")  { $error = "4"; }
+        if ($xnsor == "xn--")  { $error = "4"; }
 }
 
 return $error;
+}
+
+
+function getdetail($domain, $serverid=1) {
+
+$serverlist[1] = "whois.domainlabs.eu";
+$serverlist[2] = "whois.domaintools.com";
+$serverlist[3] = "www.aboutus.org";
+
+$detailurl = "http://".$serverlist[$serverid]."/".tr_strtolower($domain);
+
+return $detailurl;
 }
 
 
