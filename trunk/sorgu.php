@@ -36,7 +36,7 @@ Global $servers,$hunter_email;
 
 $target_domain = explode(".", $dom);
 
-$target_domainss = strtoupper($target_domain[0].".".$target_domain[1]);
+$target_domainss = tr_strtoupper($target_domain[0].".".$target_domain[1]);
 
 echo $target_domainss;
 
