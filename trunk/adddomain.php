@@ -62,7 +62,7 @@ $domain = tr_strtolower($_POST['fDomain']);
 
 $domain_array = explode(".", $domain);
 
-if ( ( strlen($domain_array[0]) > 3 ) && ($domain_array[0]!="www") && ( ($domain_array[1]=="com") ||  ($domain_array[1]=="net") ) ) {
+if ( ( strlen($domain_array[0]) >= 3 ) && ($domain_array[0]!="www") && ( ($domain_array[1]=="com") ||  ($domain_array[1]=="net") ) ) {
 
 $realdomain = tr_strtoupper($domain_array[0].'.'.$domain_array[1]);
 $error_status =  standartcontrol($domain_array[0]);
